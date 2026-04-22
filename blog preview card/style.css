@@ -12,8 +12,8 @@ main {
 }
 
 .card {
-  width: 327px;
-  height: 501px;
+  width: 384px;
+  height: 522px;
   background: #fff;
   position: absolute;
   left: 0;
@@ -29,7 +29,7 @@ main {
 
 .card-img {
   border-radius: 10px;
-  height: 200px;
+  height: 236px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -40,24 +40,34 @@ main {
   padding: 4px 12px;
   width: max-content;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   margin-top: 24px;
 }
 
 .card-main-info-publishing-info {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .card-main-info-title {
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 1.5;
   font-weight: 800;
+  display: block;
+  color: #111111;
+  text-decoration: none;
+}
+
+.card-main-info-title:hover {
+  color: #F4D04E;
 }
 
 .card-main-info-description {
-  font-size: 14px;
-  color: #6B6B6B
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 1.5;
 }
 
 .card-author-info {
