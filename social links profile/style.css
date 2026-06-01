@@ -1,0 +1,117 @@
+:root{
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333;
+  --green: #C4F82A;
+  --white: #fff;
+}
+
+@font-face {
+  font-family: SomeFont;
+  src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--grey-900);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+  font-family: "SomeFont";
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.card {
+  background: var(--grey-800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 12px;
+  padding: 40px 62px;
+  box-sizing: border-box;
+}
+
+.card-profile-picture {
+  width: 88px;
+  border-radius: 50%;
+}
+
+.card-main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-main-info-name {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-main-info-location {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--green);
+  margin: 0;
+}
+
+.card-about {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card-socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  column-gap: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.card-socials-item {
+  background: var(--grey-700);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.social-ref {
+  display: block;
+  padding: 12px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.social-ref:hover {
+  background: var(--green);
+  color: var(--grey-700);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.cs {
+  width: 100%;
+}
