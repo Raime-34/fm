@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: SomeFont;
-  src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 
 body {
@@ -100,7 +100,7 @@ main {
   text-decoration: none;
 }
 
-.social-ref:hover {
+.social-ref:hover, .social-ref:focus {
   background: var(--green);
   color: var(--grey-700);
 }
