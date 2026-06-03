@@ -1,0 +1,164 @@
+:root {
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+  --brown-800: #854632;
+  --white: #fff;
+}
+
+@font-face {
+  font-family: SomeSerif;
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  color: var(--stone-600);
+  background: var(--stone-100);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+}
+
+.content-image {
+  width: 375px;
+}
+
+.page-content {
+  padding: 2.5em 2em;
+}
+
+h1 {
+  color: var(--stone-900);
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 0.6em;
+  font-family: "SomeSerif";
+}
+
+p {
+  line-height: 1.5;
+}
+
+.additional-info {
+  background-color: var(--rose-50);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  color: var(--rose-800);
+  margin: 0 0 16px 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  counter-reset: c;
+}
+
+ul > li::before {
+  content: "•";
+  color: var(--brown-800);
+  margin-right: 16px;
+}
+
+span {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  color: var(--brown-800);
+}
+
+ol > li::before {
+  content: counter(c) ".";
+  counter-increment: c 1;
+  margin-right: 16px;
+  color: var(--brown-800);
+}
+
+.nutricion-table {
+  margin: 0;
+  padding: 0;
+}
+
+.nutricion-table li::before {
+  display: none;
+}
+
+.nutricion-table li {
+  padding: 0 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.nutricion-table li div:first-child {
+  width: 50%;
+}
+
+.nutricion-table > li:nth-of-type(n + 2) {
+  border: solid var(--stone-150);
+  border-width: 1px 0 0 0;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.nutricion-table > li > div:nth-of-type(2) {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+@media (width >= 768px) {
+  body {
+    justify-content: center;
+    padding: 128px 48px;
+  }
+
+  main {
+    width: 616px;
+    padding-top: 40px;
+    border-radius: 24px;
+  }
+
+  .content-image {
+    width: 536px;
+    border-radius: 12px;
+  }
+}
+
+@media (width >= 1440px) {
+  main {
+    width: 736px;
+  }
+}
