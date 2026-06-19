@@ -30,6 +30,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .card-product-image {
@@ -109,7 +110,6 @@ body {
   flex: none;
   position: absolute;
   bottom: 10px;
-  z-index: -1;
 }
 
 @media (min-width: 768px) {
