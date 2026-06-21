@@ -41,6 +41,7 @@ h2 {
   margin-top: 3.75rem;
   display: grid;
   gap: 2rem;
+  justify-items: center;
 }
 
 .card {
