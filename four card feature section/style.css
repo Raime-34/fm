@@ -20,6 +20,11 @@ body {
   align-items: center;
 }
 
+h1,
+h2 {
+  margin: 0;
+}
+
 h1 {
   font-size: 1.5rem;
   line-height: 1.4;
@@ -93,6 +98,13 @@ h2 {
 .attribution {
   margin: 2.5rem 0 0.625rem 0;
   justify-self: center;
+}
+
+@media (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
